@@ -13,6 +13,13 @@ var ScrollList = (function () {
     var offset = 0;
     var pressed = false;
     var reference;
+    var velocity;
+    var amplitude;
+    var timestamp;
+    var ticker;
+    var frame;
+    var target;
+    var timeConstant = 325;
     var stage;
     var viewport = {
       width: 0,
@@ -66,6 +73,14 @@ var ScrollList = (function () {
     function tap(e) {
       pressed = true;
       reference = e.stageY;
+
+      velocity = 0;
+      amplitude = 0;
+      frame = offset;
+      timestamp = Date.now();
+      clearInterval(ticker);
+      ticker = setInterval(track, 100);
+
       e.preventDefault();
       e.stopPropagation();
       return false;
@@ -73,6 +88,15 @@ var ScrollList = (function () {
 
     function release(e) {
       pressed = false;
+      clearInterval(ticker);
+
+      if (velocity > 10 || velocity < -10) {
+        amplitude = 0.8 * velocity;
+        target = Math.round(offset + amplitude);
+        timestamp = Date.now();
+        requestAnimationFrame(autoScroll);
+      }
+
       e.preventDefault();
       e.stopPropagation();
       return false;
@@ -91,6 +115,33 @@ var ScrollList = (function () {
       e.preventDefault();
       e.stopPropagation();
       return false;
+    }
+
+    function track() {
+      var now, elapsed, delta, v;
+
+      now = Date.now();
+      elapsed = now - timestamp;
+      timestamp = now;
+      delta = offset - frame;
+      frame = offset;
+
+      v = 1000 * delta / (1 + elapsed);
+      velocity = 0.8 * v + 0.2 * velocity;
+    }
+
+    function autoScroll() {
+      var elapsed, delta;
+      if (amplitude) {
+        elapsed = Date.now() - timestamp;
+        delta = -amplitude * Math.exp(-elapsed / timeConstant);
+        if (delta > 0.5 || delta < -0.5) {
+          scroll(target + delta);
+          requestAnimationFrame(autoScroll);
+        } else {
+          scroll(target);
+        }
+      }
     }
 
     return obj;
