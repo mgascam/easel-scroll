@@ -132,6 +132,7 @@ var GameHistoryView = (function(){
       var bkg = settings.currentRound.background;
       currentRound.background = new createjs.Shape();
       currentRound.background.alpha = bkg.style.opacity;
+
       currentRoundContainer.addChild(currentRound.roundLabel);
       currentRoundContainer.addChild(currentRound.hitsLabel);
       currentRoundContainer.addChild(currentRound.winLabel);

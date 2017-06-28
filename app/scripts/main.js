@@ -34,6 +34,18 @@
             'game-history-win': 'Win',
           };
           return labels[label];
+        },
+        getCurrencySymbol: function () {
+          return '$';
+        },
+        formatWinAmount: function (number, decimal) {
+          return number;
+        },
+        getTheme: function () {
+          return {
+            background: '#CCC',
+            foreground: '#BBB'
+          }
         }
       };
 
@@ -49,6 +61,49 @@
           winThreshold: 15,
           result: {
             state: 'win'
+          },
+          outcome: {
+            payout: 0
+          }
+        },
+        {
+          roundIndex: 1,
+          winThreshold: 15,
+          result: {
+            state: 'win'
+          },
+          outcome: {
+            payout: 0
+          }
+        },
+        {
+          roundIndex: 1,
+          winThreshold: 15,
+          result: {
+            state: 'win'
+          },
+          outcome: {
+            payout: 0
+          }
+        },
+        {
+          roundIndex: 1,
+          winThreshold: 15,
+          result: {
+            state: 'win'
+          },
+          outcome: {
+            payout: 0
+          }
+        },
+        {
+          roundIndex: 1,
+          winThreshold: 15,
+          result: {
+            state: 'win'
+          },
+          outcome: {
+            payout: 0
           }
         },
         {
@@ -56,12 +111,15 @@
           winThreshold: 15,
           result: {
             state: 'win'
+          },
+          outcome: {
+            payout: 100
           }
         },
       ];
-
+      gameHistory.updateCurrentRound(rounds[0]);
       rounds.forEach(function (round) {
-        gameHistory.updateCurrentRound(round);
+        gameHistory.addRoundToHistory(round);
       })
     });
   }());

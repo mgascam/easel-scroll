@@ -150,7 +150,7 @@
           "y": 0
         },
         "landscape": {
-          "x": 10,
+          "x": 18,
           "y": 0
         },
         "desktop": {
@@ -172,7 +172,7 @@
           "textAlign": "center"
         },
         "landscape": {
-          "x": 90,
+          "x": 100,
           "y": 0,
           "textAlign": "right"
         },
@@ -196,7 +196,7 @@
           "visible": false
         },
         "landscape": {
-          "x": 45,
+          "x": 58,
           "y": 2,
           "visible": false
         },
@@ -248,7 +248,7 @@
         "y": 0
       },
       "landscape": {
-        "x": 0,
+        "x": 45,
         "y": 70
       },
       "desktop": {
