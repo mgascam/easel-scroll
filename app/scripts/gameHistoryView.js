@@ -240,6 +240,7 @@ var GameHistoryView = (function(){
       currentRound.background.graphics.append(fill);
     }
     function drawHistory() {
+      console.log(roundHistory);
       roundHistory.forEach(function(round, index) {
         var roundPosition = getRoundPosition(index);
         round.container.x = roundPosition.x;
@@ -265,7 +266,7 @@ var GameHistoryView = (function(){
           round.winBackground.graphics.append(fill);
         }
         var columnWidth = winLabelBounds.width + settings.roundHistory.winBackground.layout[config.getOrientation()].padding[round.type].x;
-        var columnHeight = 20;
+        var columnHeight = isWinningRound ? 20 : 20;
 
         round.winLabel.x = columnWidth / 2;
 
@@ -292,12 +293,15 @@ var GameHistoryView = (function(){
         var roundSeparatorPosition = getRoundSeparatorPosition(index, winLabelBounds.width + settings.roundHistory.winBackground.layout[config.getOrientation()].padding[round.type].x, round.type)
         round.separator.x = roundSeparatorPosition.x;
         round.separator.y = roundSeparatorPosition.y;
+        round.container.setBounds(roundPosition.x, roundPosition.y, columnWidth, columnHeight);
       });
     }
     function getRoundPosition(index) {
       var position = {x: 0, y: 0};
       if (index !== 0) {
         var previousRound = roundHistory[index - 1];
+        var previousRoundBounds = previousRound.container.getBounds();
+        console.log(previousRoundBounds);
         switch(config.getOrientation()) {
           case 'portrait':
             var padding = (previousRound.type === 'win') ? 25 : 25;
@@ -305,8 +309,7 @@ var GameHistoryView = (function(){
             console.log(position.x);
             break;
           default:
-            var padding = (previousRound.type === 'win') ? 20 : 0;
-            position.y = Math.round((previousRound.container.getBounds().height + padding) * index);
+            position.y = previousRoundBounds.y + previousRoundBounds.height;
             break;
         }
       }

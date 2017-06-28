@@ -103,7 +103,7 @@
             state: 'win'
           },
           outcome: {
-            payout: 0
+            payout: 100
           }
         },
         {

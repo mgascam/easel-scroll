@@ -64,7 +64,6 @@ var GameHistoryController = (function(){
 
     obj.addRoundToHistory = function(params) {
       currentRound.outcome = params.outcome.payout;
-      console.log('Main Controller: ******* addRoundToHistory *******');
       history.unshift(currentRound);
       return view.addRoundToHistory(currentRound);
     };
