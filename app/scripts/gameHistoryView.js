@@ -32,7 +32,7 @@ var GameHistoryView = (function(){
     };
 
     obj.init = function(p) {
-      viewContainer.visible = false;
+      viewContainer.visible = true;
       containers.landscape = p.landscapeContainer;
       containers.portrait = p.portraitContainer;
       containers.desktop = p.desktopContainer;
