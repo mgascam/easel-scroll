@@ -1,0 +1,659 @@
+{
+  "layout": {
+    "portrait": {
+      "x": 50,
+      "y": -64,
+      "scale": 1
+    },
+    "landscape": {
+      "x": 0,
+      "y": -98,
+      "scale": 1
+    },
+    "desktop": {
+      "x": 30,
+      "y": -98,
+      "scale": 0.7
+    }
+  },
+  "header": {
+    "layout": {
+      "portrait": {
+        "x": 0,
+        "y": 0
+      },
+      "landscape": {
+        "x": 0,
+        "y": 0
+      },
+      "desktop": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "round": {
+      "style": {
+        "font": "22px Gothic-Bold",
+        "opacity": 0.3,
+        "color": "#fff"
+      },
+      "layout": {
+        "portrait": {
+          "x": 0,
+          "y": 0
+        },
+        "landscape": {
+          "x": -56,
+          "y": 0
+        },
+        "desktop": {
+          "x": -56,
+          "y": 0
+        }
+      }
+    },
+    "hits": {
+      "style": {
+        "font": "22px Gothic-Bold",
+        "opacity": 1,
+        "color": "#fff"
+      },
+      "layout": {
+        "portrait": {
+          "x": 0,
+          "y": 45
+        },
+        "landscape": {
+          "x": 45,
+          "y": 0
+        },
+        "desktop": {
+          "x": 45,
+          "y": 0
+        }
+      }
+    },
+    "win": {
+      "style": {
+        "font": "22px Gothic-Bold",
+        "opacity": 1,
+        "color": "#fff"
+      },
+      "layout": {
+        "portrait": {
+          "x": 0,
+          "y": 90,
+          "visible": true
+        },
+        "landscape": {
+          "x": 0,
+          "y": 0,
+          "visible": false
+        },
+        "desktop": {
+          "x": 0,
+          "y": 0,
+          "visible": false
+        }
+      }
+    },
+    "separator": {
+      "style": {
+        "opacity": 1,
+        "color": "#fff",
+        "width": 3,
+        "height": 20
+      },
+      "layout": {
+        "portrait": {
+          "x": 0,
+          "y": 0,
+          "visible": false
+        },
+        "landscape": {
+          "x": 31,
+          "y": 5,
+          "visible": true
+        },
+        "desktop": {
+          "x": 31,
+          "y": 5,
+          "visible": true
+        }
+      }
+    }
+  },
+  "currentRound": {
+    "layout": {
+      "portrait": {
+        "x": 120,
+        "y": 0
+      },
+      "landscape": {
+        "x": 0,
+        "y": 60
+      },
+      "desktop": {
+        "x": 5,
+        "y": 60
+      }
+    },
+    "round": {
+      "style": {
+        "font": "22px Gothic-Bold",
+        "opacity": 0.3,
+        "color": "#fff"
+      },
+      "layout": {
+        "portrait": {
+          "x": 5,
+          "y": 0
+        },
+        "landscape": {
+          "x": -26,
+          "y": 0
+        },
+        "desktop": {
+          "x": -26,
+          "y": 0
+        }
+      }
+    },
+    "hits": {
+      "style": {
+        "font": "22px Gothic-Bold",
+        "opacity": 1,
+        "color": "#fff"
+      },
+      "layout": {
+        "portrait": {
+          "x": 5,
+          "y": 45,
+          "textAlign": "center"
+        },
+        "landscape": {
+          "x": 45,
+          "y": 0,
+          "textAlign": "right"
+        },
+        "desktop": {
+          "x": 40,
+          "y": 0,
+          "textAlign": "right"
+        }
+      }
+    },
+    "win": {
+      "style": {
+        "font": "22px Icons-Keno",
+        "opacity": 1,
+        "color": "#fff"
+      },
+      "layout": {
+        "portrait": {
+          "x": 5,
+          "y": 90,
+          "visible": false
+        },
+        "landscape": {
+          "x": 10,
+          "y": 2,
+          "visible": false
+        },
+        "desktop": {
+          "x": 5,
+          "y": 0,
+          "visible": false
+        }
+      }
+    },
+    "background": {
+      "style": {
+        "font": "22px Gothic-Bold",
+        "opacity": 0.1,
+        "color": "#000"
+      },
+      "layout": {
+        "portrait": {
+          "x": -16,
+          "y": -10,
+          "visible": true,
+          "width": 44,
+          "height": 138,
+          "radius": 10
+        },
+        "landscape": {
+          "x": -50,
+          "y": -8,
+          "visible": false,
+          "width": 120,
+          "height": 44,
+          "radius": 10
+        },
+        "desktop": {
+          "x": -50,
+          "y": -8,
+          "visible": false,
+          "width": 120,
+          "height": 44,
+          "radius": 10
+        }
+      }
+    }
+  },
+  "roundHistory": {
+    "layout": {
+      "portrait": {
+        "x": 160,
+        "y": 0
+      },
+      "landscape": {
+        "x": 0,
+        "y": 70
+      },
+      "desktop": {
+        "x": 0,
+        "y": 70
+      }
+    },
+    "round": {
+      "style": {
+        "font": "22px Gothic-Bold",
+        "opacity": 0.3,
+        "color": "#fff"
+      },
+      "layout": {
+        "portrait": {
+          "x": 0,
+          "y": 0,
+          "type": {
+            "lose": {
+              "x": 0,
+              "y": 0
+            },
+            "win": {
+              "x":0,
+              "y": 0
+            }
+          }
+        },
+        "landscape": {
+          "x": -26,
+          "y": 22,
+          "type": {
+            "lose": {
+              "x": 0,
+              "y": 0
+            },
+            "win": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        "desktop": {
+          "x": -20,
+          "y": 22,
+          "type": {
+            "lose": {
+              "x": 0,
+              "y": 22
+            },
+            "win": {
+              "x": 0,
+              "y": 22
+            }
+          }
+         }
+      }
+    },
+    "hits": {
+      "style": {
+        "font": "22px Gothic-Bold",
+        "opacity": 1,
+        "color": "#fff"
+      },
+      "layout": {
+        "portrait": {
+          "x": 5,
+          "y": 45,
+          "textAlign": "center",
+          "type": {
+            "lose": {
+              "x": 0,
+              "y": 0
+            },
+            "win": {
+              "x":-5,
+              "y": 0
+            }
+          },
+          "padding": {
+            "lose": {
+              "x": 0,
+              "y": 0
+            },
+            "win": {
+              "x":-5,
+              "y": 0
+            }
+          }
+        },
+        "landscape": {
+          "x": 45,
+          "y": 22,
+          "textAlign": "right",
+          "type": {
+            "lose": {
+              "x": 0,
+              "y": 0
+            },
+            "win": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          "padding": {
+            "lose": {
+              "x": 0,
+              "y": 22
+            },
+            "win": {
+              "x": 0,
+              "y": 22
+            }
+          }
+        },
+        "desktop": {
+          "x": 45,
+          "y": 0,
+          "textAlign": "right",
+          "type": {
+            "lose": {
+              "x": 0,
+              "y": 22
+            },
+            "win": {
+              "x": 0,
+              "y": 22
+            }
+          },
+          "padding": {
+            "lose": {
+              "x": 0,
+              "y": 22
+            },
+            "win": {
+              "x": 0,
+              "y": 22
+            }
+          }
+        }
+      }
+    },
+    "win": {
+      "style": {
+        "font": "22px Gothic-Bold",
+        "opacity": 1,
+        "color": "#fff",
+        "fontSize": 11
+      },
+      "layout": {
+        "portrait": {
+          "x": 0,
+          "y": 90,
+          "visible": false,
+          "type": {
+            "lose": {
+              "x": 0,
+              "y": 0
+            },
+            "win": {
+              "x":-5,
+              "y": 0
+            }
+          },
+          "padding": {
+            "lose": {
+              "x": 0,
+              "y": 0
+            },
+            "win": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        "landscape": {
+          "x": 10,
+          "y": 60,
+          "visible": false,
+          "type": {
+            "lose": {
+              "x": 0,
+              "y": 0
+            },
+            "win": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          "padding": {
+            "lose": {
+              "x": 0,
+              "y": 40
+            },
+            "win": {
+              "x": 0,
+              "y": 40
+            }
+          }
+        },
+        "desktop": {
+          "x": 0,
+          "y": 0,
+          "visible": false,
+          "type": {
+            "lose": {
+              "x": 0,
+              "y": 0
+            },
+            "win": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          "padding": {
+            "lose": {
+              "x": 0,
+              "y": 40
+            },
+            "win": {
+              "x": 0,
+              "y": 40
+            }
+          }
+        }
+      }
+    },
+    "winBackground": {
+      "style": {
+        "opacity": 1,
+        "fill": "#fff"
+      },
+      "layout": {
+        "portrait": {
+          "x": -15,
+          "y": 90,
+          "padding": {
+            "lose": {
+              "x": 0,
+              "y": 10
+            },
+            "win": {
+              "x": 20,
+              "y": 10
+            }
+          },
+          "type": {
+            "lose": {
+              "x": 0,
+              "y": 10
+            },
+            "win": {
+              "x": 10,
+              "y": 10
+            }
+          },
+          "radius": 10
+        },
+        "landscape": {
+          "x": -32,
+          "y": 80,
+          "padding": {
+            "lose": {
+              "x": 0,
+              "y": 10
+            },
+            "win": {
+              "x": 20,
+              "y": 10
+            }
+          },
+          "offset": {
+            "x": 20,
+            "y": 0
+          },
+          "type": {
+            "lose": {
+              "x": 0,
+              "y": 0
+            },
+            "win": {
+              "x": -10,
+              "y": 0
+            }
+          },
+          "radius": 10
+        },
+        "desktop": {
+          "x": 0,
+          "y": 80,
+          "padding": {
+            "lose": {
+              "x": 0,
+              "y": 10
+            },
+            "win": {
+              "x": 20,
+              "y": 10
+            }
+          },
+          "offset": {
+            "x": 20,
+            "y": 0
+          },
+          "type": {
+            "lose": {
+              "x": 0,
+              "y": 0
+            },
+            "win": {
+              "x": -10,
+              "y": 0
+            }
+          },
+          "radius": 10
+        }
+      }
+    },
+    "separator": {
+      "style": {
+        "opacity": 0.1,
+        "color": "#000"
+      },
+      "layout": {
+        "portrait": {
+          "x": 60,
+          "y": -5,
+          "width": 3,
+          "height": 135,
+          "type": {
+            "lose": {
+              "x": 20,
+              "y": 0
+            },
+            "win": {
+              "x": 12,
+              "y": 0
+            }
+          },
+          "padding": {
+            "lose": {
+              "x": 20,
+              "y": 0
+            },
+            "win": {
+              "x": 12,
+              "y": 0
+            }
+          }
+        },
+        "landscape": {
+          "x": -40,
+          "y": 0,
+          "visible": true,
+          "width": 105,
+          "height": 3,
+          "type": {
+            "lose": {
+              "x": 20,
+              "y": 75
+            },
+            "win": {
+              "x": 12,
+              "y": 120
+            }
+          },
+          "padding": {
+            "lose": {
+              "x": 20,
+              "y": 0
+            },
+            "win": {
+              "x": 12,
+              "y": 0
+            }
+          }
+        },
+        "desktop": {
+          "x": -40,
+          "y": 0,
+          "visible": true,
+          "width": 105,
+          "height": 3,
+          "type": {
+            "lose": {
+              "x": 20,
+              "y": 75
+            },
+            "win": {
+              "x": 12,
+              "y": 120
+            }
+          },
+          "padding": {
+            "lose": {
+              "x": 20,
+              "y": 0
+            },
+            "win": {
+              "x": 12,
+              "y": 0
+            }
+          }
+        }
+      }
+    }
+  }
+}

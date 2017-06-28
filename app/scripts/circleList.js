@@ -30,7 +30,6 @@ var CircleList = (function () {
       scroller = ScrollList();
       scroller.init({parentContainer: view.container, stage: stage, viewport: {width: 200, height: 300}})
     }
-
     function createCircle(index, distance) {
       var circle = new createjs.Shape();
       circle.graphics.beginFill('DeepSkyBlue').drawCircle(0, 0, 50);
@@ -39,13 +38,11 @@ var CircleList = (function () {
       view.container.setBounds(100, circle.y, 100, 100 * index);
       view.container.addChild(circle);
     }
-
     function createMask() {
       view.mask = new createjs.Shape();
       view.mask.graphics.beginFill('#fff').drawRect(0, 0, 200, 300);
       view.container.mask = view.mask;
     }
-
     function refreshScroller() {
         scroller.refresh({content: view.container.getBounds()})
     }
